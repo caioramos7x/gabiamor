@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Meu Amor ❤️</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@400;700&display=swap');
+        body {
+            font-family: 'Lexend Mega', sans-serif;
+            text-align: center;
+            background-color: #ffe6f2;
+            color: #d63384;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            animation: pulse 1.5s infinite;
+        }
+        .mensagem {
+            font-size: 1.5em;
+            margin-top: 20px;
+            animation: fadeIn 2s infinite alternate;
+        }
+        .botao {
+            margin-top: 30px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #ff66b2;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            animation: bounce 1.5s infinite;
+        }
+        .botao:hover {
+            background-color: #d63384;
+        }
+        .imagem {
+            width: 300px;
+            height: auto;
+            border-radius: 20px;
+            margin-top: 20px;
+        }
+        .carta {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            margin-top: 30px;
+            max-width: 700px;
+            display: inline-block;
+        }
+        #surpresa-imagem, #extra-imagem {
+            display: none;
+            margin-top: 30px;
+            width: 300px;
+            border-radius: 20px;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Botão de música do Spotify -->
+    <iframe style="border-radius:12px; margin-bottom: 20px;" 
+        src="https://open.spotify.com/embed/track/2fJcCZXjaPx86LQymV6Ufu?utm_source=generator" 
+        width="100%" height="152" frameBorder="0" allowfullscreen="" 
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+    </iframe>
+   
+    <h1>Feliz Dia das Mulheres, Meu Amor! 💖</h1>
+    <img src="https://media.discordapp.net/attachments/1128725650530902087/1347970991237763102/IMG_3044.jpg?ex=67cdc350&is=67cc71d0&hm=2a99891b1208eaa6412ef83f0f85ae2e2444920dafb2b2a5cc4fb75f4e30a3fc&=&format=webp&width=414&height=552" class="imagem">
+    <p class="mensagem">Você é incrível, especial e merece todo o amor do mundo! 💕</p>
+    <button class="botao" onclick="toggleSurpresa()">Clique para uma surpresa</button>
+    <p id="surpresa" class="mensagem" style="display: none;">eu te amo muito amor 💖! </p>
+    <button class="botao" onclick="toggleImagem()">Clique para mais uma surpresa</button>
+    <img id="surpresa-imagem" src="https://media.discordapp.net/attachments/1128725650530902087/1347972633949638737/IMG_3287.jpg?ex=67cdc4d8&is=67cc7358&hm=fade75aa2bbeb996514597ca9f10096d615da5ac0b6334585cdbe12e4d37af05&=&format=webp&width=492&height=656" style="display: none;">
+    <button class="botao" onclick="toggleExtraImagem()">Mais uma surpresa! 💕</button>
+    <img id="extra-imagem" src="https://media.discordapp.net/attachments/1128725650530902087/1347970991954989076/IMG_6835.jpg?ex=67cdc350&is=67cc71d0&hm=21243d3a6ccd4caed9d9d8ba1755cecbcafe39cd5f49a57ed253b89092aba098&=&format=webp&width=310&height=552" style="display: none;">
+    <div class="carta">
+        <h2>Minha Cartinha Para Você 💌</h2>
+        <p>meu amor, todos os dias ao seu lado são um presente. você ilumina minha vida com seu sorriso e me faz querer ser uma pessoa melhor. neste dia das mulheres, quero lembrar o quanto você é incrível, forte e especial. te amo infinitamente! 💖</p>
+    </div>
+
+    <script>
+        function toggleSurpresa() {
+            let surpresa = document.getElementById('surpresa');
+            surpresa.style.display = surpresa.style.display === 'none' ? 'block' : 'none';
+        }
+        function toggleImagem() {
+            let imagem = document.getElementById('surpresa-imagem');
+            imagem.style.display = imagem.style.display === 'none' ? 'block' : 'none';
+        }
+        function toggleExtraImagem() {
+            let imagem = document.getElementById('extra-imagem');
+            imagem.style.display = imagem.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>
